@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GMG Registration Form</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+
+<body>
+    <header id="header">
+        <img src="./gold_mind_logo-removebg-preview.png">
+        <h1>Training Registration Form</h1>
+    </header>
+
+    <div class="section">
+
+        <div class="student-bio">
+            <h3>Student Bio</h3>
+        </div>
+        <form action="#" id="form"  >
+            <section class="form-body">
+                <div class="box">
+                    <label for="name">Full name</label>
+                    <input class="input name " type="text" id="name" placeholder="full name" required>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="box">
+                    <label for="email">Email</label>
+                    <input class="input email " type="text" id="email" placeholder="email" required>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="box">
+                    <label for="home-address">Home address (Nearest Bus Stop)</label>
+                    <input class="input address" type="text" id="address" placeholder="home-address " required>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="box">
+                    <label for="number">Phone Number</label>
+                    <input class="input phone" type="number" id="phone" placeholder="Phone Number" required>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="box">
+                    <label for="number">Whatsapp Number</label>
+                    <input class="input whatsapp" type="number" id="whatsapp" placeholder="Whatsapp Number" required>
+                    <div class="error"></div>
+                </div>
+                <div class="box">
+                    <label for="dob">Date of Birth</label>
+                    <input class="input dob" type="date" id="dob" required>
+                    <div class="error"></div>
+                </div>
+                <div class="box">
+                    <label for="identification">Means of Identification</label>
+                    <input class="input identification" type="text" id="identification"
+                        placeholder="Drivers lincense/international passport/national identity" required>
+                    <div class="error"></div>
+                </div>
+                <div class="box">
+                    <label for="study">Course of study</label>
+                    <input class="input study" type="text" id="study" placeholder="Course of study" required>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="box">
+                    <label for="study">Study Duration</label>
+                    <input class="input duration" type="text" id="duration" placeholder="Full Time/ Part Time" required>
+                    <div class="error"></div>
+                </div>
+    
+    
+    
+                <div class="box">
+                    <label for="study">If Full Time (can you go anywhere the academy give you)</label>
+                    <input class="input travel" type="text" id="travel" placeholder="Yes/No" required>
+                    <div class="error"></div>
+                </div>
+    
+             
+    
+           
+    
+                <div class="box">
+                    <label for="study">Do you which to obtain certificate?</label>
+                    <input class="input certificate" type="text" id="certificate" placeholder="Yes/No" required>
+                    <div class="error"></div>
+                </div>
+    
+                <div class="box">
+                    <label for="study">Do you promise to return to the country after the approved training with the
+                        team?</label>
+                    <input class="input returns " type="text" id="returns" placeholder="Yes/No" required>
+                    <div class="error"></div>
+                </div>
+    
+               
+    
+                    <div class="guarantor">
+                        <p>GUARANTOR OR SPONSOR</p>
+    
+                        <div class="box">
+                            <label for="full-name">Full name</label>
+                            <input class="input guarantor_name" type="text" id="guarantor_name" placeholder="fullname" required>
+                            <div class="error"></div>
+                        </div>
+    
+                        <div class="box">
+                            <label for="email">Email</label>
+                            <input class="input guarantor_email" type="text" id="guarantor_email" placeholder="email" required>
+                            <div class="error"></div>
+                        </div>
+    
+                      
+    
+                        <div class="box">
+                            <label for="number">Phone Number</label>
+                            <input class="input guarantor_number" type="number" id="guarantor_number" placeholder="Phone Number" required>
+                            <div class="error"></div>
+                        </div>
+    
+    
+                    </div>
+    
+    
+            </section>
+    
+            <div id="btn-container">
+                <button type="submit">Submit</button>
+                <div id="spinner"></div>
+            </div>
+        </form>
+
+    </div>
+  
+
+
+
+   
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>

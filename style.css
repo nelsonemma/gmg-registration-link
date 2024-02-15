@@ -1,0 +1,265 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#header {
+    background-color: gainsboro;
+    /* height: 120px; */
+    width: 100%;
+    height: fit-content;
+    color: blue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 1px 0.2px 1px black;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1;
+   
+   
+
+}
+
+.section{
+    position: relative;
+    padding-top: 10%;
+   
+}
+
+#header img {
+    width: 8%;
+}
+
+.student-bio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h3 {
+    color: rgb(4, 4, 4);
+    margin-top: 15px;
+    font-weight: 900;
+    animation: fadeInDown;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+ 
+}
+
+
+
+#form {
+
+    width: 500px;
+
+    margin: auto;
+
+
+    padding: 10px;
+    /* position: absolute;
+    top: 10; */
+
+    
+
+
+}
+
+#form .box {
+    margin-bottom: 5px;
+
+    animation: fadeInDown;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+
+
+}
+
+#form .boxx {
+    margin-bottom: 5px;
+}
+
+#form .box input,
+#form .box textarea {
+    display: block;
+    width: 100%;
+    height: 40px;
+    outline: none;
+    padding: 3px;
+    border: 1px solid black;
+    border-radius: 5px;
+    background-color: gainsboro;
+
+}
+
+.error {
+    height: 10px;
+    color: red;
+    font-size: 10px;
+}
+
+.boxx .option {
+    display: flex;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+/* #form .box textarea {
+    height: 80px;
+    resize: none;
+} */
+
+.guarantor p {
+    display: flex;
+    justify-content: center;
+    margin-top: 7px;
+    margin-bottom: 7px;
+    font-weight: 900;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    background-color: blue;
+    color: white;
+    border: 0;
+}
+
+button:hover {
+    background-color: rgb(17, 17, 53);
+    transition-delay: 200ms;
+}
+
+#btn-container {
+    position: relative;
+    margin-top: 10px;
+}
+
+#spinner {
+    width: 25px;
+    height: 25px;
+    border: 2px solid red;
+    border-right: 3px solid rgb(0, 255, 132);
+    border-radius: 50%;
+    position: absolute;
+    top: 20%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    animation: loading 0.65s ease-in-out infinite;
+    display: none;
+}
+
+@keyframes loading {
+    from {
+        transform: rotate(0turn);
+    }
+
+    to {
+        transform: rotate(1turn);
+    }
+}
+
+
+/* .lil-box {
+    border: 2px solid green;
+    padding: 6px;
+    width: fit-content;
+    position: absolute;
+    left: 50%;
+    scale: 0;
+    transition: all 500ms ease-in-out;
+    top: -200%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    font-size: 20px;
+
+}
+
+.lil-box .notifivation {
+    border: 2px solid green;
+    padding: 6px;
+}
+
+.notify {
+    top: 10%;
+    scale: 1;
+}
+
+
+
+
+
+h1,
+.members {
+    text-align: center;
+}
+
+#table {
+    margin: auto;
+}
+
+th {
+    min-width: 120px;
+}
+
+#table,
+th,
+td {
+    border: 1px solid black;
+    padding: 4px;
+} */
+
+
+
+
+@keyframes fadeInDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    .section {
+      
+      padding-top: 15%;
+
+      width: fit-content;
+      
+      
+    }
+
+    .student-bio h3{
+        
+        padding-top: 5%;
+        
+    }
+
+    #header img {
+        width: 15%;
+    }
+  }
