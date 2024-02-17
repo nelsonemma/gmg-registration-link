@@ -21,32 +21,32 @@
         <div class="student-bio">
             <h3>Student Bio</h3>
         </div>
-        <form action="#" id="form"  >
+        <form action="#" id="form">
             <section class="form-body">
                 <div class="box">
                     <label for="name">Full name</label>
                     <input class="input name " type="text" id="name" placeholder="full name" required>
                     <div class="error"></div>
                 </div>
-    
+
                 <div class="box">
                     <label for="email">Email</label>
                     <input class="input email " type="text" id="email" placeholder="email" required>
                     <div class="error"></div>
                 </div>
-    
+
                 <div class="box">
                     <label for="home-address">Home address (Nearest Bus Stop)</label>
                     <input class="input address" type="text" id="address" placeholder="home-address " required>
                     <div class="error"></div>
                 </div>
-    
+
                 <div class="box">
                     <label for="number">Phone Number</label>
                     <input class="input phone" type="number" id="phone" placeholder="Phone Number" required>
                     <div class="error"></div>
                 </div>
-    
+
                 <div class="box">
                     <label for="number">Whatsapp Number</label>
                     <input class="input whatsapp" type="number" id="whatsapp" placeholder="Whatsapp Number" required>
@@ -63,86 +63,130 @@
                         placeholder="Drivers lincense/international passport/national identity" required>
                     <div class="error"></div>
                 </div>
-                <div class="box">
+
+                <!-- <div class="box">
                     <label for="study">Course of study</label>
+                   
                     <input class="input study" type="text" id="study" placeholder="Course of study" required>
+                   
                     <div class="error"></div>
+                </div> -->
+
+
+                <div class="box">
+                    <label for="study">Course of study <span> </span></label>
+                    <!-- <button onclick="togglePopup( )" class="btnn">?show popup</button> -->
+                    
+
+                    <!-- <div class="popup" id="popup-1">
+                        <div class="overlay"></div>
+                            <div class="content">
+                                <div class="close-btn" onclick="togglePopup( )" >x</div>
+                                <h1>Title</h1>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aliquam asperiores vel quidem voluptate autem odit, nihil nesciunt sed fugiat ab dolorem praesentium quam dolor quasi maiores et explicabo odio iste. 
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum nihil et omnis quaerat maxime tempora tenetur magni aut odio, eveniet architecto aperiam aliquid reiciendis perspiciatis nobis maiores pariatur, cum ipsum.
+                                </p>
+                            </div>
+                        
+                    </div> -->
+
+
+
+
+                    <select class="select-option" id="study">
+
+                        <option>Select Course</option>
+                        <option>Smart Agric</option>
+
+                        <option>Food Processing and Preservation</option>
+                    </select>
                 </div>
-    
+
+
+
+
+
+
+
                 <div class="box">
                     <label for="study">Study Duration</label>
                     <input class="input duration" type="text" id="duration" placeholder="Full Time/ Part Time" required>
                     <div class="error"></div>
                 </div>
-    
-    
-    
+
+
+
                 <div class="box">
                     <label for="study">If Full Time (can you go anywhere the academy give you)</label>
                     <input class="input travel" type="text" id="travel" placeholder="Yes/No" required>
                     <div class="error"></div>
                 </div>
-    
-             
-    
-           
-    
+
+
+
+
+
                 <div class="box">
                     <label for="study">Do you which to obtain certificate?</label>
                     <input class="input certificate" type="text" id="certificate" placeholder="Yes/No" required>
                     <div class="error"></div>
                 </div>
-    
+
                 <div class="box">
                     <label for="study">Do you promise to return to the country after the approved training with the
                         team?</label>
                     <input class="input returns " type="text" id="returns" placeholder="Yes/No" required>
                     <div class="error"></div>
                 </div>
-    
-               
-    
-                    <div class="guarantor">
-                        <p>GUARANTOR OR SPONSOR</p>
-    
-                        <div class="box">
-                            <label for="full-name">Full name</label>
-                            <input class="input guarantor_name" type="text" id="guarantor_name" placeholder="fullname" required>
-                            <div class="error"></div>
-                        </div>
-    
-                        <div class="box">
-                            <label for="email">Email</label>
-                            <input class="input guarantor_email" type="text" id="guarantor_email" placeholder="email" required>
-                            <div class="error"></div>
-                        </div>
-    
-                      
-    
-                        <div class="box">
-                            <label for="number">Phone Number</label>
-                            <input class="input guarantor_number" type="number" id="guarantor_number" placeholder="Phone Number" required>
-                            <div class="error"></div>
-                        </div>
-    
-    
+
+
+
+                <div class="guarantor">
+                    <p>GUARANTOR OR SPONSOR</p>
+
+                    <div class="box">
+                        <label for="full-name">Full name</label>
+                        <input class="input guarantor_name" type="text" id="guarantor_name" placeholder="fullname"
+                            required>
+                        <div class="error"></div>
                     </div>
-    
-    
+
+                    <div class="box">
+                        <label for="email">Email</label>
+                        <input class="input guarantor_email" type="text" id="guarantor_email" placeholder="email"
+                            required>
+                        <div class="error"></div>
+                    </div>
+
+
+
+                    <div class="box">
+                        <label for="number">Phone Number</label>
+                        <input class="input guarantor_number" type="number" id="guarantor_number"
+                            placeholder="Phone Number" required>
+                        <div class="error"></div>
+                    </div>
+
+
+
+
+                </div>
+
+
             </section>
-    
+
             <div id="btn-container">
-                <button type="submit">Submit</button>
-                <div id="spinner"></div>
+                <button class="button" type="submit">Submit</button>
+
             </div>
         </form>
 
     </div>
-  
 
 
 
-   
+
+
 
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
